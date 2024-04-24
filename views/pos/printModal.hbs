@@ -1,0 +1,29 @@
+<div class="modal fade" id="mdlLabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="height: 100%;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Opciones de impresion</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="monthInput">Fecha de llenado:</label>
+                        <input id="monthInput" type="date" name="month" min="2022-12" class="input-form">
+                    </div>
+                    <div class="col-6">
+                        <label for="copies">Qty:</label>
+                        <input type="number" name="copies" id="copiesInput" class="input-form">
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary float-right" data-dismiss="modal">Cerrar</button>
+                <button id="printLabels" class="btn btn-primary float-right">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
