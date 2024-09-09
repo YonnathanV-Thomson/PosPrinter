@@ -22,7 +22,7 @@ app.engine("hbs", engine({ extname: "hbs", layoutsDir: "./views/", partialsDir  
 app.get('/', (req, res) => {
     res.render('main',{ layout: 'main' });
 });
-``
+
 app.post('/printLabels', async (req, res) => {
     printer.printLabels(req.body).then(() => {
         res.status(200).send(JSON.stringify({
